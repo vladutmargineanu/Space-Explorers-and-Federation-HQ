@@ -16,14 +16,14 @@ public class CommunicationChannel {
     private boolean currentThread;
     private long getThreadId;
     private LinkedBlockingQueue<Message> messagesSpaceExplorers;
-	private LinkedBlockingQueue<Message> messagesHeadQuarters;
+    private LinkedBlockingQueue<Message> messagesHeadQuarters;
 
 	public CommunicationChannel() {
-        messagesSpaceExplorers = new LinkedBlockingQueue<>();
-        messagesHeadQuarters = new LinkedBlockingQueue<>();
-        parentNodeThreads = new HashMap<Long, Message>();
-        currentThread = false;
-        getThreadId = -100;
+		messagesSpaceExplorers = new LinkedBlockingQueue<>();
+		messagesHeadQuarters = new LinkedBlockingQueue<>();
+		parentNodeThreads = new HashMap<Long, Message>();
+		currentThread = false;
+		getThreadId = -100;
     }
 
 	/**
